@@ -64,18 +64,22 @@ For more information on all the things you can do with Feathers visit [docs.feat
     - name
     - description
     - image
+- Categories
+    - name
+    - image
 - Articles
     - url
-    - owner -> (users)
-    - author -> (authors)
-    - author_images -> (authors)
+    - owner -> users
+    - author -> authors
+    - author_images -> authors
     - title
     - text
-    - tags
-    - issue -> (issues)
+    - issue -> issues
+    - [category] -> categories
+    - [tags]
     - preview_text
     - preview_image
     - finalised
     - publish_on
 - Promo_article
-    - promo_article -> (articles)
+    - promo_article -> articles

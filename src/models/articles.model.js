@@ -43,6 +43,10 @@ module.exports = function (app) {
       type: Schema.Types.ObjectId,
       ref: 'issues'
     },
+    category: [{
+      type: Schema.Types.ObjectId,
+      ref: 'categories'
+    }],
     preview_text: {
       type: String,
     },
