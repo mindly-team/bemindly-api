@@ -1,4 +1,4 @@
 {
-  "host": "bemindly-api-app.feathersjs.com",
-  "port": "PORT"
+  "host": "bemindly.com",
+  "port": "8081"
 }

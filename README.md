@@ -43,3 +43,39 @@ $ feathers help                           # Show all commands
 ## Help
 
 For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
+
+--- 
+
+<br><br>
+
+## Database structure
+
+- Users
+    - name
+    - password
+    - role
+    - image
+- Authors
+    - name
+    - external_link
+    - image
+    - bio
+- Issues
+    - name
+    - description
+    - image
+- Articles
+    - url
+    - owner -> (users)
+    - author -> (authors)
+    - author_images -> (authors)
+    - title
+    - text
+    - tags
+    - issue -> (issues)
+    - preview_text
+    - preview_image
+    - finalised
+    - publish_on
+- Promo_article
+    - promo_article -> (articles)

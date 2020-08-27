@@ -1,28 +1,24 @@
-// users-model.js - A mongoose model
-//
+// issues-model.js - A mongoose model
+// 
 // See http://mongoosejs.com/docs/models.html
 // for more of what you can do here.
 module.exports = function (app) {
-  const modelName = 'users';
+  const modelName = 'issues';
   const mongooseClient = app.get('mongooseClient');
-  const schema = new mongooseClient.Schema({
-    email: {
+  const {
+    Schema
+  } = mongooseClient;
+  const schema = new Schema({
+    name: {
       type: String,
       unique: true,
-      lowercase: true,
-      require: true
-    },
-    password: {
-      type: String,
-      require: true
-    },
-    role: {
-      type: String,
-      require: true,
-      default: 'member'
+      required: true
     },
     image: {
-      type: String
+      type: String,
+    },
+    description: {
+      type: String,
     },
   }, {
     timestamps: true

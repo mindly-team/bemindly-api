@@ -2,6 +2,6 @@ const {
   Service
 } = require('feathers-mongoose');
 
-exports.Users = class Users extends Service {
+exports.Articles = class Articles extends Service {
 
 };
